@@ -1,0 +1,2 @@
+# mamis
+STARTUP MAMIS
