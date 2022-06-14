@@ -7,116 +7,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mamis</title>
   <!-- MAIN -->
-  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="./Mamis.Web.FrontEnd/styles/style.css">
  
   <!-- favicon -->
-  <link rel="shortcut icon" href="componentes/img/icone.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./Mamis.Web.FrontEnd/src/img/favicon-32x32.png" type="image/x-icon">
+
    <!-- Icons Bootstrap -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
    
 </head>
 
 <body>
-  <header id="header">
-  <div class="border">
-    <div class="centro">
-        <picture>
-            <a id="logo" href="#"><img src="componentes/img/LOGOROSA.png" alt="Logo Mamis"></a>
-        </picture>
-        <nav id="nav">
-            
-            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+    <header id="header">
+        <img id="logo" src="./Mamis.Web.FrontEnd/src/img/LOGOROSA.png" alt="Logo Mamis">
+
+        <nav>
+        
+            <button aria-label="Abrir Menu" 
+                    id="btn-mobile" 
+                    aria-haspopup="true" 
+                    aria-controls="menu" 
+                    aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
-            
+        
             <ul id="menu" role="menu">
+
                 <div class="dropdown">
-                <li class="btn-dropdown" id="Quem"><a class="link-menu" href="/">Quem somos</a></li>
-                    
+                    <li class="btn-dropdown" id="Quem"><a class="link-menu" href="/">Quem somos</a></li>
+        
                     <div class="dropdown_submenu">
-                        <a  href="/">História</a>
-                        <a  href="/">O que é?</a>
-                        <a  href="/">Como ajudar?</a>
+                        <a href="/">História</a>
+                        <a href="/">O que é?</a>
+                        <a href="/">Como ajudar?</a>
                     </div>
                 </div>
-                
+        
                 <div class="dropdown">
-                <li class="btn-dropdown"><a class="link-menu" href="/">Mamis</a></li>
-                   <div class="dropdown_submenu">
-                        <a  href="/">Missão</a>
-                        <a  href="/">Mãe para Mãe </a>
- 
+                    <li class="btn-dropdown"><a class="link-menu" href="/">Mamis</a></li>
+                    <div class="dropdown_submenu">
+                        <a href="/">Missão</a>
+                        <a href="/">Mãe para Mãe </a>
+        
                     </div>
                 </div>
                 <div class="dropdown">
-                <li class="btn-dropdown"><a class="link-menu" href="/">Doe</a></li>
+                    <li class="btn-dropdown"><a class="link-menu" href="/">Doe</a></li>
         
                 </div>
-                
+        
                 <div class="dropdown">
                     <li class="btn-dropdown"><a class="link-menu" href="/">Contato</a></li>
                 </div>
-                
+        
                 <div class="dropdown">
                     <li class="btn-dropdown"><a class="link-menu" href="/">Login</a></li>
                 </div>
                 <div class="dropdown">
-                <li><a id="theme" href="#"><i alt="Mudar tema" class="bi bi-lightbulb"></i></i></a></li>
+                    <li><a id="theme" href="#"><i alt="Mudar tema" class="bi bi-lightbulb"></i></i></a></li>
                 </div>
             </ul>
         </nav>
-    </div>
-  </div>
-    <div class="banner">
-        <section class="slider">
-            <!-- Carrosel -->
-            <div class="slides">
-                <!-- Botao  -->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!-- Imagens do carrosel -->
-                <div class="slide first">
-                    <a href="#"><img class="images" id="atual" src="componentes/img/imagem1-1.png" alt="Startup LEV"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="componentes/img/imagem2-1.png"   alt="Prototipagem"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="componentes/img/imagem3-1.png"  alt="Introdução"></a>
-                </div>
-                <div class="slide">
-                    <a href="#"><img src="componentes/img/imagem6-1.png"  alt="Doe"></a>
-                </div>
+    </header>
     
-                 <!-- Navegacao -->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-    
-            </div>
-            <!-- Cor checked input -->
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-        </section>
-    </div>
-    
-  </header>
-  <footer>
+    <iframe id="frame" src="./Mamis.Web.FrontEnd/Pages/home.html" ></iframe>
 
+
+      
+  <footer>
+    <img    id="logoFooter"
+            src="./Mamis.Web.FrontEnd/src/img/LOGOROSA.png" 
+            alt="Logo Mamis"/>
+    <a class="contato">@mamisbrasil</a>
+    <a class="contato">Fale Conosco </a>
   </footer>
 
-    <script src="/js/carrosel.js"></script>
-    <script src="/js/hamburguer.js"></script>
-    <script src="js/lamp.js"></script>
+    
+    <script src="./Mamis.Web.FrontEnd/js/lamp.js"></script>
+    
 </body>
 
 </html>

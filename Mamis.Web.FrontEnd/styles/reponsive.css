@@ -1,0 +1,74 @@
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    #theme {
+        color: var(--texto-menu);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 50%;
+        top: 120px;
+        right: 0px;
+        background: var(--fundo);
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        font-size: 20px;
+        margin: 0 1rem;
+        border-bottom: 5px solid rgba(210, 16, 136, 0.05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 4px solid var(--texto-menu);
+        width: 30px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: var(--texto-menu);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
