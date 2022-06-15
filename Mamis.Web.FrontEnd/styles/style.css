@@ -14,23 +14,8 @@
     --fundo-branco: #fff;
 }
 
-body, ul {
-  margin: 0px;
-  padding
-  : 0px;
-}
-.border{
-    border-bottom: 3px solid var(--texto-menu);
-    justify-content: center;
-    display: flex;
-}
 
-a {
-  color: var(--texto-menu);
-  text-decoration: none;
-  font-family: sans-serif;
-  
-}
+
 
 .border a:hover:not(.ultimo-a){
   background: var(--fundo-branco);
@@ -39,89 +24,72 @@ a {
 
 #logo {  
   height: 160px;
-  display: inline;
+  width: 160px;
+
 }
 
 #header{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--fundo);    
 }
 
-.centro{
-    align-items: center;
-    display: flex;    
-    box-sizing: border-box;
-    height: 120px;
-    padding: 1rem;
-    justify-content: space-between;
-    
-}
-
-
-
-/* DROPDOWN MENU */
-#theme{
-  color: var(--fundo-branco);
-  justify-content: center !important;
-  text-align: center !important;
-  display: flex !important;
-  
-}
-
-
-
-
-.link-menu{
-  text-decoration: none;
-  
-}
-
-.btn-dropdown {
-  
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-}
-
-
-.dropdown_submenu {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 30%;  
-  z-index: 1;
-}
-
-.dropdown_submenu a {
+#header a {
   color: var(--texto-menu);
   text-decoration: none;
-  display: block;
+  font-family: sans-serif;
   
 }
 
-.dropdown_submenu a:hover {
-  background-color: #f1f1f1}
 
-.dropdown:hover .dropdown_submenu {
-  display: block;
+
+footer {
+  border: 2px solid var(--fundo-branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--fundo);
+  padding: 30px;
+}
+
+footer a{
+  color: var(--texto-menu);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+footer img{
+  
+  width: 160px;
+  height: 160px;
+}
+
+.contato {
+  
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.icones{
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icones a:not(:last-child){
+  
+  margin-right: 15px;
 }
 
 /* MEU HAMBURGER */
 
 #menu {
-  
-  display: flex;
+ 
   list-style: none;
   gap: 0.5rem;
 }
@@ -140,118 +108,7 @@ a {
 #btn-mobile {
   display: none;
 }
-
-/* RESPONSIVE */
-
-@media (max-width: 1000px) {
-  #theme{
-    color: var(--texto-menu);
-  }
-
-  .dropdown_submenu {
-    display: block;
-    position: unset;
-    background-color: var(--fundo);
-    min-width: 160px;
-    box-shadow: none;
-    z-index: 1;
-    width: 50%;
-    top: 120px;
-    right: 0px;
-    height: 0px;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-  .dropdown_submenu a {
-  padding: 1rem 0;
-  font-size: 20px;
-  margin: 0 1rem;
-  border-bottom: 5px solid rgba(210, 16, 136, 0.05);
-  }
-  #menu {
-    
-    display: block;
-    position: absolute;
-    width: 50%;
-    top: 120px;
-    right: 0px;
-    background: var(--fundo);
-    transition: 0.6s;
-    z-index: 1000;
-    height: 0px;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  #nav.active #menu {
-    height: calc(100vh - 70px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  #menu a {
-    padding: 1rem 0;
-    font-size: 20px;
-    margin: 0 1rem;
-    border-bottom: 5px solid rgba(210, 16, 136, 0.05);
-  }
-  #btn-mobile {
-    display: flex;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    gap: 0.5rem;
-  }
-  #hamburger {
-    border-top: 4px solid var(--texto-menu);
-    width: 30px;
-  }
-  #hamburger::after,
-  #hamburger::before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: var(--texto-menu);
-    margin-top: 5px;
-    transition: 0.3s;
-    position: relative;
-  }
-  #nav.active #hamburger {
-    border-top-color: transparent;
-  }
-  #nav.active #hamburger::before {
-    transform: rotate(135deg);
-  }
-  #nav.active #hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-}
-
 #frame {
-    width: 100%;
-    height: 900px;
+  width: 100%;
+  min-height: 900px;
 }
-
-::-webkit-scrollbar{
-  width: 0px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #182325;
-  padding: 30px;
-}
-
-.contato {
-  font-size: 20px;
-  padding: 20px;
-  margin: 20;
-}
-
-

@@ -1,18 +1,29 @@
 const tema = document.getElementById('theme');
-console.log(tema);
-function lamp(event){
+const rootElement = document.documentElement
+
+
+
+
+function changeTheme(property, value){
+    rootElement.style.setProperty(property, value)
+}
+
+function lamp(){
 // class pra mudar <i class="bi bi-lightbulb"></i> <i class="bi bi-lightbulb-off"></i>
     if (tema.classList[1]=="bi-lightbulb-off"){
         tema.classList.remove('bi','bi-lightbulb-off');
         tema.classList.add('bi','bi-lightbulb');
-        document.documentElement.style.setProperty('--fundo', '#f1faee');
-        document.documentElement.style.setProperty('--fundo-branco', '#182325');
+        changeTheme('--fundo','#182325');
+        changeTheme('--fundo-branco', '#fff');
         
     }else{
             tema.classList.remove('bi','bi-lightbulb');
             tema.classList.add('bi','bi-lightbulb-off');
-            document.documentElement.style.setProperty('--fundo','#182325');
-            document.documentElement.style.setProperty('--fundo-branco', '#fff');}
+            
+            changeTheme('--fundo', '#f1faee');
+            changeTheme('--fundo-branco', '#182325');}
 }
 
+
 tema.addEventListener('click', lamp);
+tema.addEventListener('touchstart', lamp);
