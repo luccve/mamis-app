@@ -12,6 +12,7 @@
     --texto-menu-light: #231942;
     --texto-menu: #ff006e;
     --fundo-branco: #fff;
+    
 }
 
 
@@ -112,6 +113,7 @@ footer img{
 #btn-mobile {
   display: none;
 }
+
 #frame {
   width: 100%;
   min-height: 900px;
