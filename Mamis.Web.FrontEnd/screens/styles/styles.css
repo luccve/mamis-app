@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+:root {
+    --fontTamTitle: 50px;
+    --fontTamText: 12px;
+    --fontTitle: 'Fascinate', cursive, sans-serif;
+    --fontText:'Open Sans', sans-serif;
+    --color1ThemeLigth: #7F96FF;
+    --color2ThemeLigth: #E56399;
+    --color3ThemeLigth: #ECEBF3;
+    --color1ThemeDark: #FFFFFF;
+    --color2ThemeDark: #E56399;
+    --color3ThemeDark: #333745;
+}
+
+body {
+    background-color: var(--color3ThemeLigth);
+}
+
+h1 {
+    font-size: var(--fontTamTitle);
+    font-family: var(--fontTitle);
+    color: var(--color1ThemeLigth);
+}
+
+p {
+    font-size: var(--fontTamText);
+    font-family: var(--fontText);
+    color: var(--color3ThemeDark);
+}
