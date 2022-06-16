@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de doação</title>
+
+    <link rel="stylesheet" href="/Mamis.Web.FrontEnd/styles/doe.css">
+</head>
+<body>
+
+    <main>
+        <form action="https://formsubmit.co/vfl1@discente.ifpe.edu.br" 
+            method="POST">
+            <fieldset>
+                <legend>Formulário de doação ❤</legend>
+                <label for="nome">
+                    Name <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+                </label>
+
+                <label for="idade">
+                    Idade <input type="number" value="0" min="0" max="120" name="sobrenome" id="sobrenome">
+                </label>
+
+                <label for="e-mail">
+                    E-mail <input type="email" name="e-mail" id="e-mail" placeholder="Insira seu e-mail">
+                </label>                  
+                                                  
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </fieldset>
+
+            <!-- <input  type="hidden" 
+                            name="_next" 
+                            value="http://127.0.0.1:5500/Mamis.Web.FrontEnd/Pages/obrigado.html"> -->
+
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+    </main>
+
+</body>
+</html>
