@@ -15,6 +15,12 @@
     --color3ThemeDark: #333745;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
 body {
     background-color: var(--color3ThemeLigth);
 }
