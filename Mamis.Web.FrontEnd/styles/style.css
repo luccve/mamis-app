@@ -34,7 +34,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--fundo);    
+  background: var(--fundo);  
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 
 #header a {
@@ -54,6 +56,7 @@ footer {
   flex-direction: row;
   background-color: var(--fundo);
   padding: 30px;
+  
 }
 
 footer a{
@@ -96,9 +99,10 @@ footer img{
 
 #menu a {
   display: block;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   padding: 0.5rem;
+
 }
 
 #menu ul li a:nth-child(6){
@@ -111,4 +115,13 @@ footer img{
 #frame {
   width: 100%;
   min-height: 900px;
+}
+
+#conteudo {
+  min-height: 600px;
+  
+}
+#conteudo p{
+ display: none;
+  
 }
