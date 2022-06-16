@@ -4,7 +4,7 @@
 
 :root {
     --fontTamTitle: 50px;
-    --fontTamText: 12px;
+    --fontTamText: 18px;
     --fontTitle: 'Fascinate', cursive, sans-serif;
     --fontText:'Open Sans', sans-serif;
     --color1ThemeLigth: #7F96FF;
@@ -29,4 +29,9 @@ p {
     font-size: var(--fontTamText);
     font-family: var(--fontText);
     color: var(--color3ThemeDark);
+}
+
+.imageLeft {
+    max-width: 200px;
+    padding: 0px 80px 0px 0px;
 }
