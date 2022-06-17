@@ -25,6 +25,7 @@
     color: var(--texto-menu);
   }
 
+ 
   #menu {
     
     display: block;
@@ -38,6 +39,7 @@
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+    
   }
   #nav.active #menu {
     height: calc(100vh - 70px);
