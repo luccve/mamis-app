@@ -13,6 +13,7 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
+    "react-youtube": "^9.0.2",
     "reactstrap": "^9.1.1"
   },
   "devDependencies": {

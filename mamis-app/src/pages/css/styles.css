@@ -97,6 +97,14 @@ main .container-fluid{
     text-align: center !important;
 }
 
+#maeparamae{
+    border-radius: 6px;
+    max-width: 100%;
+}
+
+#video{
+    margin: 30px 0;
+}
 
 @media (max-width:800px) {
     .title{
@@ -108,5 +116,10 @@ main .container-fluid{
         margin: 0 auto;
         width: 200px;
 
+    }
+    #video{
+        width: 300px;
+        height: 200px;
+        margin: 30px 0;
     }
 }
