@@ -1,0 +1,308 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --fundo-menu: #e83706;
+  --fundo: #182325;
+  --fundo-light: #f1faee;
+  --texto: #8fafb7;
+  --texto-menu-light: #231942;
+  --texto-menu: #ff006e;
+  --fundo-branco: #fff;
+
+}
+
+.border a:hover:not(.ultimo-a) {
+  background: var(--fundo-branco);
+  border-radius: 10px;
+}
+
+#logo {
+  height: 160px;
+  width: 160px;
+
+}
+
+#header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--fundo);
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+#header a {
+  color: var(--texto-menu);
+  text-decoration: none;
+  font-family: sans-serif;
+
+}
+
+
+
+footer {
+  border: 2px solid var(--fundo-branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--fundo);
+  padding: 30px;
+
+}
+
+footer a {
+  color: var(--texto-menu);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+footer img {
+
+  width: 160px;
+  height: 160px;
+}
+
+.contato {
+
+  font-size: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.icones {
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icones a:not(:last-child) {
+
+  margin-right: 15px;
+}
+
+/* MEU HAMBURGER */
+
+#menu {
+
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5rem;
+
+}
+
+#menu ul li a:nth-child(6) {
+  margin-left: 100px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#frame {
+  width: 100%;
+  min-height: 900px;
+}
+
+#conteudo {
+  min-height: 600px;
+
+}
+
+#conteudo p {
+  display: none;
+
+}
+
+/* DROPDOWN MENU */
+#theme {
+  color: var(--fundo-branco);
+  justify-content: center !important;
+  text-align: center !important;
+  display: flex !important;
+
+}
+
+.link-menu {
+  text-decoration: none;
+
+}
+
+.btn-dropdown {
+
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.show {
+  background-color: var(--fundo-branco);
+  border-radius: 6px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown:hover:not(:last-child) {
+  border-radius: 6px;
+  background-color: var(--fundo-branco);
+
+}
+
+
+.dropdown_submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 30%;
+  z-index: 1;
+}
+
+.dropdown_submenu a {
+  color: var(--texto-menu);
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown_submenu a:hover {
+  background-color: var(--fundo-branco);
+  border-radius: 6px;
+
+}
+
+.dropdown:hover .dropdown_submenu {
+  display: block;
+}
+
+/* RESPONSIVE */
+
+
+@media (max-width:200px) {
+  #header {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width:650px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .contato {
+
+    display: block;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  #theme {
+    color: var(--texto-menu);
+  }
+
+
+  #menu {
+
+    display: block;
+    position: absolute;
+    width: 50%;
+    top: 120px;
+    right: 0px;
+    background: var(--fundo);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    font-size: 20px;
+    margin: 0 1rem;
+
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    border-top: 4px solid var(--texto-menu);
+    width: 30px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: var(--texto-menu);
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .dropdown_submenu {
+
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+
+}
