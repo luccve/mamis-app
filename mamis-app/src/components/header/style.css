@@ -12,7 +12,8 @@
   --texto-menu-light: #231942;
   --texto-menu: #ff006e;
   --fundo-branco: #fff;
-
+  --tema: #ECC816;
+  --boxshadow: 0px 8px 16px 0px rgba((0, 0, 0), 0.3);
 }
 
 .border a:hover:not(.ultimo-a) {
@@ -47,13 +48,14 @@
 
 
 footer {
-  border: 2px solid var(--fundo-branco);
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   background-color: var(--fundo);
-  padding: 30px;
+  
+  
 
 }
 
@@ -128,11 +130,19 @@ footer img {
 
 /* DROPDOWN MENU */
 #theme {
-  color: var(--fundo-branco);
+  color: var(--tema);
   justify-content: center !important;
   text-align: center !important;
   display: flex !important;
+  font-size: 22px;
+  font-weight: 600px;
+}
 
+#theme:hover{
+  border-bottom: 2px solid var(--fundo-branco);
+  border-radius: 6px;
+  padding-bottom: 5px;
+  transition: .3s;
 }
 
 .link-menu {
@@ -149,10 +159,10 @@ footer img {
 
 }
 
-.show {
+/* .show {
   background-color: var(--fundo-branco);
   border-radius: 6px;
-}
+} */
 
 
 .dropdown {
@@ -162,33 +172,36 @@ footer img {
 }
 
 .dropdown:hover:not(:last-child) {
+  border-bottom: 2px solid var(--fundo-branco);
   border-radius: 6px;
-  background-color: var(--fundo-branco);
-
+  
+  box-shadow: var(--boxshadow);
 }
 
 
 .dropdown_submenu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
   border-radius: 6px;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--boxshadow);
   left: 30%;
   z-index: 1;
 }
 
 .dropdown_submenu a {
-  color: var(--texto-menu);
+  
   text-decoration: none;
   display: block;
 
 }
 
 .dropdown_submenu a:hover {
-  background-color: var(--fundo-branco);
+  background-color: #fff;
+  box-shadow: var(--boxshadow);
   border-radius: 6px;
+  border-bottom: 2px solid #182325 !important;
 
 }
 
@@ -220,7 +233,9 @@ footer img {
 
 @media (max-width: 1000px) {
   #theme {
-    color: var(--texto-menu);
+    color: var(--tema);
+    font-size: 20px;
+    font-weight: 600px;
   }
 
 

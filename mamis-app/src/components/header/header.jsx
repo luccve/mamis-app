@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-
 import Logorosa from '../../assets/LOGOROSA.png'
 
 function Header() {
@@ -19,6 +18,8 @@ function Header() {
       tema.classList.add('fa-sun');
       changeTheme('--fundo', '#182325');
       changeTheme('--fundo-branco', '#fff');
+      changeTheme('--tema', '#ECC816');
+      
 
     } else {
       tema.classList.remove('fa-sun');
@@ -26,6 +27,8 @@ function Header() {
 
       changeTheme('--fundo', '#f1faee');
       changeTheme('--fundo-branco', '#182325');
+      changeTheme('--tema', '#000');
+     
     }
   }
 
@@ -64,34 +67,34 @@ function Header() {
         <ul id="menu" role="menu">
 
           <div className="dropdown ">
-            <li className="btn-dropdown" id="Quem"><a id="1" className="link-menu show" href="#">Quem somos</a></li>
+            <li className="btn-dropdown" id="Quem"><a id="1" className="link-menu show" href="/quemsomos">Quem somos</a></li>
 
             <div className="dropdown_submenu">
-              <a href="/">História</a>
-              <a href="/">O que é?</a>
-              <a href="/">Como ajudar?</a>
+              <a href="/historia">História</a>
+              <a href="/FAQ">FAQ</a>
+              <a href="/comoajudar">Como ajudar?</a>
             </div>
           </div>
 
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="2" className="link-menu" href="#">Mamis</a></li>
+            <li className="btn-dropdown"><a id="2" className="link-menu" href="/mamis">Mamis</a></li>
             <div className="dropdown_submenu">
-              <a href="/">Missão</a>
-              <a href="/">Mãe para Mãe </a>
+              <a href="/missao">Missão</a>
+              <a href="/maeparamae">Mãe para Mãe </a>
 
             </div>
           </div>
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="3" className="link-menu" href="#">Doe</a></li>
+            <li className="btn-dropdown"><a id="3" className="link-menu" href="/doacao">Doe</a></li>
 
           </div>
 
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="4" className="link-menu" href="#">Contato</a></li>
+            <li className="btn-dropdown"><a id="4" className="link-menu" href="/contato">Contato</a></li>
           </div>
 
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="5" className="link-menu" href="#">Login</a></li>
+            <li className="btn-dropdown"><a id="5" className="link-menu" href="/login">Login</a></li>
           </div>
           <div className="dropdown">
             <li>
