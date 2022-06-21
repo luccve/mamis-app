@@ -2,12 +2,12 @@ img{
     border-radius: 6px;
 }
 
-main{
+.main{
     display: block !important;
     
 }
 
-section{
+.main section{
     margin-bottom: 30px;
 }
 
@@ -19,6 +19,9 @@ main a{
 
 @media (max-width:850px) {
     main{
-        min-height: 1400px !important;
+        max-height: 1400px !important;
+    }
+    .row{
+        display: block;
     }
 }

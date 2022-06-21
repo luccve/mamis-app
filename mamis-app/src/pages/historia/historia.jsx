@@ -8,20 +8,18 @@ function Historia() {
         
             <section className="row align-items-center">
                 <div className='col-xs-5 col-md-5 col-sm-12'>
-                    <img id='mae' src={mae} alt="Imagem ilustrativa de mãe com crianças de colo,"/>
+                    <img id='mae' src={mae} alt="Imagem ilustrativa de mãe com crianças de colo."/>
                 </div>
                 <div className='col-xs-5 col-md col-sm-12'>
                     <h1 className="title">História</h1>
                     <p>
-                        Somos um plataforma integrada tanto no formato web como mobile. Ainda estamos em fase de
-                        desenvolvimento.Nosso principal
-                        objetivo é fornece um canal direto de comunicação entre possíveis doadoras de leite materno e os bancos de
-                        leite.
+                        Nosso projeto começou com 5 alunos de desenvolvimento de sistemas, a convite da professora de empreendedorismo, participamos
+                        do nosso primeiro evento juntos. E na busca da ideia da MAMIS, pensamos em muita coisa, e por isso demorou 3 dias até 
+                        observamos essa fragilidade.
                     </p>
                     <p>
-                        Funcionando como meio incentivador aproximando o doador de quem vai receber a doação, visando dessa maneira
-                        alcançar mais doadoras e humanizando o processo. Comunicando também de maneira efetiva os órgãos receptores dos
-                        interessados a doar. Além de disponibilizar informações esclarecedoras sobre todo o processo de doação.
+                       Felizmente acabou dando certo o suficiente de ganharmos o primeiro lugar, depois disso entramos em fase de desenvolvimento 
+                       da tecnologia, e para acelerar entramos em incubação na <b>NINHO.</b> E hoje estamos em fase final para o fim da prototipagem. 
                     </p>
                 </div>
             </section>

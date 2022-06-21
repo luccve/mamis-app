@@ -1,0 +1,19 @@
+
+
+
+h1{
+    font-size: 22px;
+}
+
+
+.table td{
+    color: black;
+}
+
+@media (max-width: 400px) {
+    .table{
+        
+        font-size: 12px;
+    }
+   
+}

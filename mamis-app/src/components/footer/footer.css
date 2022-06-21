@@ -1,0 +1,67 @@
+footer {
+
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--fundo);
+
+
+
+}
+
+footer a {
+    color: var(--texto-menu);
+    text-decoration: none;
+    font-family: var(--FontText);
+}
+
+#logoFooter {
+
+    width: 160px;
+    height: 160px;
+}
+
+#logoFooter:hover {
+    cursor: pointer;
+    
+    
+}
+
+
+.contato {
+    cursor: pointer;
+    font-size: 20px;
+   
+}
+
+footer li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--texto-menu);
+}
+
+
+
+
+.icones {
+    flex-direction: row;
+    text-align: center;
+    font-size: large;
+}
+
+.icones a:not(:last-child) {
+
+    margin-right: 15px;
+}
+
+@media (max-width:900px) {
+    footer {
+        text-align: center;
+    }
+    footer li{
+        text-align: justify;
+    }
+  
+
+}

@@ -6,7 +6,7 @@ import ajuda2 from '../assets/comoajudar2.png'
 
 function Comoajudar() {
   return (
-        <main className="container-fluid">
+        <main className="container-fluid main">
         
             <section className="row align-items-center">
                 <div className='col-xs-5 col-md-5 col-sm-12'>

@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    padding: 20px;
+    margin: 20px auto;
+    width: 800px;
+    min-height: 600px;
+    border-radius: 6px;
+    box-shadow: 0px 0 4px 0px rgba(0,0,0,.1);
+    background-color: #fff;
+    text-align: center;
+    font-family: var(--fontText);
+    font-size: var(--fontTamText);
+    color: var(--color3ThemeDark);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cabecario h1{
+    font-size: 25px;
+    font-family: var(--fontText);
+    text-align: start;
+    padding-left: 35px;
+}
+
+.cabecario h5{
+    font-size: 15px;
+    font-family: var(--fontText);
+    text-align: start;
+    padding-left: 35px;
+}
+form input{
+    text-align: start;
+    
+}
+.cabecario #logo{
+    width: 120px;
+    height: 120px;
+}
+
+.input-group{
+    flex-direction: column;
+    display: block;
+    padding: 30px;
+    
+}
+textarea{
+    width: 100%;
+    margin-top: 10px;
+    resize: none;
+    overflow: auto;
+    border: 1px solid rgba(0,0,0,.1);
+    background: var(--fundo-light);
+}
+
+textarea:focus{
+    background-color: #fff;
+}
+
+.input-box input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.buttoes input:not(:first-child){
+    margin-left: 10px;
+}
+
+input[type="file"]{
+    display: none;
+}
+input:focus{
+    background-color: #fff;
+    
+}
+
+.input-box label i{
+    color: #0073ea;
+}
+
+input{
+    border-radius: 4px;
+    background-color: var(--fundo-light);
+    font-weight: 600;
+}
+
+.buttoes input{
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    transition: .3s;
+}
+.buttoes input:last-child{
+    background-color: #0073ea;
+    color: white;
+    
+}
+.buttoes input:last-child:hover{
+    background-color: rgba(0,0,255,.9);
+    
+}
+
+#valueSpan{
+    font-size: 12px;
+    text-align: end !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-style: italic;
+    justify-content: start;
+    align-items: flex-start;
+}

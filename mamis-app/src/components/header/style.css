@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 * {
   padding: 0px;
   margin: 0px;
@@ -14,6 +19,7 @@
   --fundo-branco: #fff;
   --tema: #ECC816;
   --boxshadow: 0px 8px 16px 0px rgba((0, 0, 0), 0.3);
+  
 }
 
 .border a:hover:not(.ultimo-a) {
@@ -24,7 +30,7 @@
 #logo {
   height: 160px;
   width: 160px;
-
+  cursor: pointer;
 }
 
 #header {
@@ -47,47 +53,8 @@
 
 
 
-footer {
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  background-color: var(--fundo);
-  
-  
 
-}
 
-footer a {
-  color: var(--texto-menu);
-  text-decoration: none;
-  font-family: sans-serif;
-}
-
-footer img {
-
-  width: 160px;
-  height: 160px;
-}
-
-.contato {
-
-  font-size: 20px;
-  padding: 20px;
-  margin: 20px;
-}
-
-.icones {
-  flex-direction: row;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.icones a:not(:last-child) {
-
-  margin-right: 15px;
-}
 
 /* MEU HAMBURGER */
 
@@ -102,6 +69,7 @@ footer img {
   font-size: 16px;
   font-weight: bold;
   padding: 0.5rem;
+  
 
 }
 

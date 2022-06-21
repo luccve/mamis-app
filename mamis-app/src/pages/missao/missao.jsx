@@ -10,7 +10,7 @@ function Missao() {
     <main className='container-fluid  cardCentral'>
         <section className='row align-items-center'>
                 
-                <div className="col-md-5 card">
+                <div className="col-lg-5 col-md-5 card">
                     <img src={MissaoPNG} className="card-img-top img-fluid" alt="Diferencial"/>
                     <div className="card-body">
                         
@@ -21,11 +21,11 @@ function Missao() {
                     </div>
                 </div>
                 <div className='col-md-1'></div>
-                <div className="col-md-5 card">
-                    <img src={MissaoPNG2} className="card-img-top img-fluid" alt="..."/>
+                <div className="col-lg-5 col-md-5 card">
+                    <img src={MissaoPNG2} className="card-img-top img-fluid" alt="Vamos juntos salvar vidas!"/>
                     <div className="card-body">
                         
-                        <p className="card-text">Temos o objetivo de alcançar as mães lactantes e as que tem pretensão
+                        <p className="card-text">Temos o objetivos de alcançar as mães lactantes e as que tem pretensão
                                 de se tornarem pelo...</p>
                         <p className="card-text"><button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                                                     Leia mais...</button></p>
