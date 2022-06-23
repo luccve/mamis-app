@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../css/contato.css'
-// import TextareaJS from '../../js/textarea/textarea';
+import TextareaJS from '../../js/textarea/textarea';
+import Clear from '../../js/clear/clear';
+import Upload from '../../js/upload/upload';
+import MaskPhone from '../../js/mask/maskphone';
+import MaskEmail from '../../js/mask/maskemail';
+
 
 import Logorosa from '../../assets/LOGOROSA.png'
+import NameMask from '../../js/mask/maskname';
 
 function Contato() {
 
-   
 
     return (
         <section className='formulario'>
@@ -21,43 +26,45 @@ function Contato() {
                     <div className="input-box">
                         {/*  nome completo */}
                         <label htmlFor="username" ></label>
-                        <input id='username' type="text" name="username" placeholder="Nome completo" required></input>
+                        <input id='username' onKeyUp={event=>NameMask(event)} maxLength="30" type="text" name="username" placeholder="Nome completo" required></input>
+                        <span id="nameValidation"></span>
                     </div>
                     <div className="input-box">
                         {/* email */}
                         <label htmlFor="email" ></label>
-                        <input id='email' type="email" name="email" placeholder="E-mail" required></input>
+                        <input   onBlur={event=>MaskEmail(event)} id='email' type="email" name="email" placeholder="E-mail" required></input>
+                        <span id="emailValidation"></span>
                     </div>
                     {/* TELEFONE */}
                     <div className="input-box">
                         <label htmlFor="telefone" ></label>
-                        <input id='telefone' type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" ></input>
+                        <input id='telefone' onKeyUp={event=>MaskPhone(event)} onBlur={event=>MaskPhone(event)} type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" ></input>
                         {/* ASSUNTO */}
 
                     </div>
                     {/* ASSUNTO */}
                     <div className="input-box">
                         <label htmlFor="assunto" ></label>
-                        <input id='assunto' type="text" name="assunto" placeholder="Assunto" required></input>
+                        <input maxLength="50" id='assunto' type="text" name="assunto" placeholder="Assunto" required></input>
                     </div>
                     {/* MENSAGEM */}
                     <div className="input-box">
                         <label htmlFor="msg" ></label>
-                        <textarea maxLength="400" rows="5" id='msg' name='msg' placeholder="  Mensagem limite (400)" required></textarea>
-                        <span id='valueSpan'>aqui</span>
+                        <textarea onChange={event => TextareaJS(event)} maxLength="400" rows="5" id='msg' name='msg' placeholder="  Mensagem limite (400)" required></textarea>
+                        <span id='valueSpan'>   </span>
 
                     </div>
                     {/* INPUT DE ARQUIVO */}
                     <div className="input-box">
-                        <label htmlFor="upload" ><i className='fas fa-file-upload'></i><b> Arquivos</b></label>
-                        <input id='upload' type="file" multiple name="upload"  ></input>
+                       <div id="file"> <label htmlFor="upload" name="upload" placeholder="Upload" required> <i className='fas fa-file-upload'></i><b> Arquivos</b></label></div>
+                        <input id='upload' accept='image/*' type="file" multiple name="upload"  onChange={event=> Upload(event)}></input>
 
                     </div>
                 </div>
                 <div className='rodape'>
                     <div className="buttoes">
-                        <input type="reset" value="Limpar" />
-                        <input type="submit" value="Enviar" />
+                        <input type="reset" value="Limpar" onClick={event=>Clear(event)} />
+                        <input type="submit" target="_blank" onClick={event=>() => window.location = 'mailto:lev.sac.br@gmail.com'} value="Enviar" />
 
                     </div>
                 </div>

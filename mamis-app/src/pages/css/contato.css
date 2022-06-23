@@ -63,7 +63,7 @@ textarea:focus{
     background-color: #fff;
 }
 
-.input-box input{
+.input-box input:not(#upload){
     width: 100%;
     margin-top: 20px;
     padding: 12px;
@@ -74,11 +74,8 @@ textarea:focus{
     margin-left: 10px;
 }
 
-input[type="file"]{
-    display: none;
-}
 input:focus{
-    background-color: #fff;
+    background-color: #fff !important;
     
 }
 
@@ -86,7 +83,7 @@ input:focus{
     color: #0073ea;
 }
 
-input{
+input:not(#upload){
     border-radius: 4px;
     background-color: var(--fundo-light);
     font-weight: 600;
@@ -97,23 +94,97 @@ input{
     border-radius: 4px;
     border: none;
     transition: .3s;
+    border: 1px solid rgba(0,0,0,0);
 }
-.buttoes input:last-child{
-    background-color: #0073ea;
-    color: white;
+.buttoes input[type="submit"]{
+    background-color: #0073ea !important;
+    color: white !important;
     
 }
 .buttoes input:last-child:hover{
-    background-color: rgba(0,0,255,.9);
+    background-color: rgba(0,0,255,.9) !important;
     
 }
 
 #valueSpan{
     font-size: 12px;
-    text-align: end !important;
-    padding: 0 !important;
-    margin: 0 !important;
     font-style: italic;
-    justify-content: start;
-    align-items: flex-start;
+    opacity: 1;
+    text-align: start;   
+    padding-bottom: 20px;
+    display: block;
+}
+
+
+input[type="reset"]{
+    background-color: rgba(249, 199, 132, .5) !important;
+    transition: .3s !important;
+    
+}
+
+input[type="reset"]:hover{
+    background-color: #f9c784 !important;
+    border: 1px solid blue !important;
+    
+}
+
+#upload{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#file{
+    display: flex;
+    cursor:pointer;
+}
+
+#file label:hover{
+    cursor:pointer;
+}
+
+#file i:hover{
+    color: rgba(0,0,255,.9);
+    
+}
+
+#email:invalid{
+    border: 1px solid red;
+}
+
+
+@media (max-width:830px) {
+    .formulario{
+        width: 600px;
+    }
+}
+@media (max-width:640px) {
+    .formulario{
+        width: 400px;
+    }
+}
+@media (max-width:440px) {
+    .formulario{
+        width: 400px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 12px;
+    }
+}
+@media (max-width:360px) {
+    .formulario{
+        width: 300px !important;
+        font-size: 12px !important;
+    }
+    h1{
+        font-size: 12px !important;
+    }
+    h5{
+        font-size: 10px !important;
+    }
 }

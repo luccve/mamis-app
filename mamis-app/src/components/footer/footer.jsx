@@ -7,9 +7,9 @@ function Footer() {
     <footer className="footer container-fluid">
       <div className="row align-items-center">
         <div className="col">
-          <img id="logoFooter"
+          <a href="/"><img id="logoFooter"
             src={Logorosa}
-            alt="Logo Mamis" />
+            alt="Logo Mamis" /></a>
         </div>
         <div className="col">
           <a href='/quemsomos' className="contato">Quem somos</a>

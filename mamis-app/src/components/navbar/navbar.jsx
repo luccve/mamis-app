@@ -1,6 +1,6 @@
 import React from 'react';
 import '../header/style.css'
-
+import Login from '../login/login';
 import lamp from '../../js/changetheme/changetheme';
 import toggleMenu from '../../js/toggleMenu/toggleMenu';
 
@@ -52,7 +52,7 @@ function Navbar() {
           </div>
 
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="5" className="link-menu" href="/login">Login</a></li>
+            <li className="btn-dropdown"><a id="5" className="link-menu" onClick={(e) => Login(e)}>Login</a></li>
           </div>
           <div className="dropdown">
             <li>

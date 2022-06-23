@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header id="header">
-      <img id="logo" src={Logorosa} alt="Logo Mamis" />
+      <a href="/"><img id="logo" src={Logorosa} href="/" alt="Logo Mamis" /></a>
 
       <Navbar />
 
