@@ -45,7 +45,7 @@ function Doe() {
 
                     </table>
                     <div className="col-12">
-                        <h1>Para prosseguir com a doação é preciso fazer <a href="/login">Login</a> ou fazer <a href="Cadastro">Cadastro</a></h1>
+                        <h1>Para prosseguir com a doação é preciso fazer <a href="/login">Login</a> ou fazer <a href="/Cadastro">Cadastro</a></h1>
                     </div>
                     <div className="col-12">
                         <h1>Para mais informações sobre todo o processo <a target="_blank" href="https://rblh.fiocruz.br/doacao-de-leite-humano-0">Acesse.</a></h1>

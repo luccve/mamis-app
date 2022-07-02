@@ -3,4 +3,6 @@ export default function Var(){
     var nameValidation = document.getElementById("nameValidation");
     var emailValidation = document.getElementById("emailValidation");
     var inputNome = document.getElementById("#username");
+
+    return variaveis = [file, nameValidation, emailValidation, inputNome];
 }

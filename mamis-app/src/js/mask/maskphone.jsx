@@ -1,5 +1,5 @@
 export default function MaskPhone(event) {
-
+    var telefone = document.getElementById('telefone');
     var valor = document.getElementById("telefone").attributes[0].ownerElement['value'];
     var retorno = valor.replace(/\D/g, "");
     retorno = retorno.replace(/^0/, "");
@@ -16,8 +16,20 @@ export default function MaskPhone(event) {
     } else {
       if (retorno.length != 0) {
         retorno = retorno.replace(/^(\d*)/, "($1");
+        
       }
     }
-    document.getElementById("telefone").attributes[0].ownerElement['value'] = retorno;
-
+    
+    telefone.addEventListener("blur", function(event){
+      if (retorno.length>13){
+        document.getElementById("telefone").attributes[0].ownerElement['value'] = retorno;
+        
+        telefone.style.border = "1px solid rgba(0,0,0,.1)";
+        telefone.placeholder = "(xx) xxxxx-xxxx (WhatsApp)";
+      }else{
+        document.getElementById("telefone").attributes[0].ownerElement['value'] = "";
+        telefone.placeholder = "Adicione um WhatsApp válido";
+        telefone.style.border = "2px solid red";
+      }
+    })
 }

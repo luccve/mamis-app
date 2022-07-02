@@ -38,7 +38,7 @@ function Contato() {
                     {/* TELEFONE */}
                     <div className="input-box">
                         <label htmlFor="telefone" ></label>
-                        <input id='telefone' onKeyUp={event=>MaskPhone(event)} onBlur={event=>MaskPhone(event)} type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" ></input>
+                        <input maxLength={11} id='telefone' onKeyUp={event=>MaskPhone(event)} onBlur={event=>MaskPhone(event)} type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx (WhatsApp)" ></input>
                         {/* ASSUNTO */}
 
                     </div>

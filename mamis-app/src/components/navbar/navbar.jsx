@@ -18,6 +18,7 @@ function Navbar() {
           aria-expanded="false"
           onClick={(e) => toggleMenu(e)}
           onTouchStart={(e) => toggleMenu(e)}
+          onBlur={(e) => toggleMenu(e)}
         >
           <span id="hamburger"></span>
         </button>
@@ -52,7 +53,7 @@ function Navbar() {
           </div>
 
           <div className="dropdown">
-            <li className="btn-dropdown"><a id="5" className="link-menu" onClick={(e) => Login(e)}>Login</a></li>
+            <li className="btn-dropdown"><button id="5" className="link-menu" onClick={(e) => Login(e)}>Login</button></li>
           </div>
           <div className="dropdown">
             <li>

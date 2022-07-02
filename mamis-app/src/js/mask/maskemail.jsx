@@ -2,9 +2,7 @@ export default function MaskEmail() {
 
   var email = document.getElementById("email");
   var emailValidation = document.getElementById("emailValidation");
-  var validRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-  
-  email.value.replace(validRegex, "");
+ 
   validarEmail(email, emailValidation);
   
 
