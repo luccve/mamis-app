@@ -153,7 +153,13 @@ input[type="reset"]:hover{
     border: 1px solid red;
 }
 
+form a{
+    
+    text-decoration: none;
+    color: var(--texto-menu);
+    font-weight: 600;
 
+}
 
 
 @media (max-width:830px) {

@@ -69,6 +69,9 @@ function Cadastro() {
                         <input maxLength="50" onFocus={(event) => Checker(event)} onChange={(event) => Checker(event)} onBlur={event => ClearPassword(event)} id='passwordchecker' type="password" name="passwordchecker" placeholder="Confirme a senha" required></input>
                         <span id="passwordValidation"></span>
                     </div>
+                    <div>
+                        <a className='' href="\login">Já tem cadastro?</a>
+                    </div>
 
                 </div>
                 <div className='rodape'>

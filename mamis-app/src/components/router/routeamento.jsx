@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Faq from "../../pages/oquee/faq" 
 import Historia from "../../pages/historia/historia"
 import Mae from "../../pages/maeparamae/maeparamae"
@@ -9,6 +9,7 @@ import Contato from "../../pages/contato/contato"
 import Mamis from "../../pages/mamis/mamis"
 import Doacao from "../../pages/doe/doe"
 import Cadastro from '../../pages/cadastro/cadastro';
+import ComponentLogin from '../../pages/componentLogin/componentLogin';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 // import { Container } from './styles';
 
@@ -48,6 +49,10 @@ function Routeamento() {
         <Routes>
             <Route path="/cadastro" element={<Cadastro />}></Route>
         </Routes>
+        <Routes>
+            <Route path="/login" element={<ComponentLogin />}></Route>
+        </Routes>
+        
     </Router>
     )
 }

@@ -1,0 +1,198 @@
+#login .btn-primary {
+    background-color: none !important;
+    border: none;
+}
+
+#login .dropdown:hover {
+    border: none !important;
+
+}
+
+.modal-title {
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--color1ThemeLigth);
+    font-family: var(--fontTitle);
+}
+
+#login .modal-header img {
+    width: 60px;
+    height: 60px;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+#login .modal-header {
+    display: flex !important;
+}
+
+
+
+#login::selection {
+    color: #fff;
+    background: #5372F0;
+}
+
+#login .wrapper {
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+#login .wrapper header {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#login .wrapper form {
+    margin: 40px 0;
+}
+
+#login form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#login form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+#login form .pass-txt{
+    margin-top: 5px !important;
+}
+
+
+@keyframes shake {
+
+    0%,
+    100% {
+        margin-left: 0px;
+    }
+
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+
+#login form .field .input-area {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+#login form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: #5372F0;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    text-align: center !important;
+}
+
+#login form .field input:focus,
+#login form .field.valid input {
+    border-color: #5372F0;
+}
+
+#login form .field.shake input,
+#login form .field.error input {
+    border-color: #dc3545;
+}
+
+#login .field .input-area i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+#login .input-area .icon {
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+}
+
+#login .input-area .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+
+#login form input:focus~.icon,
+#login form .field.valid .icon {
+    color: #5372F0;
+}
+
+#login form .field.shake input:focus~.icon,
+#login form .field.error input:focus~.icon {
+    color: #bfbfbf;
+}
+
+#login form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+#login form .field .error-txt {
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+
+#login form .field .error {
+    display: none;
+}
+
+#login form .field.shake .error,
+#login form .field.error .error {
+    display: block;
+}
+
+#login form .pass-txt {
+    text-align: left;
+   
+
+}
+
+#login .wrapper a {
+    color: #5372F0;
+    text-decoration: none;
+}
+
+#login .wrapper a:hover {
+    text-decoration: underline;
+}
+
+#login form input[type="submit"] {
+    height: 50px;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#login form input[type="submit"]:hover {
+    background: #2c52ed;
+}
+
