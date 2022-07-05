@@ -1,0 +1,5 @@
+primeiro atualizo a main(reactMamis) branch
+npm run build
+npm run preview (ver se ta certo)
+npm run deploy (para deixar no stage)
+e depois da o push na setinha em baixo.

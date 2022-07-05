@@ -21,7 +21,6 @@ function Navbar() {
         aria-controls="menu"
         aria-expanded="false"
         onClick={e => toggleMenu(e)}
-        onTouchStart={e => toggleMenu(e)}
       >
         <span id="hamburger"></span>
       </button>
@@ -155,7 +154,6 @@ function Navbar() {
               <i
                 id="theme"
                 onClick={e => lamp(e)}
-                onTouchStart={e => lamp(e)}
                 alt="Mudar tema"
                 className="far fa-sun"
               ></i>

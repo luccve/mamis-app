@@ -10,9 +10,9 @@ function Footer() {
     <footer className="footer container-fluid">
       <div className="row align-items-center">
         <div className="col">
-          <a href="/">
+          <Link to={PATH + '/'}>
             <img id="logoFooter" src={Logorosa} alt="Logo Mamis" />
-          </a>
+          </Link>
         </div>
         <div className="col">
           <Link to={PATH + '/quemsomos'} className="contato">
