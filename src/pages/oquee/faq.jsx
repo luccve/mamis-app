@@ -4,8 +4,10 @@ import imagem1 from '../assets/imagem1.png'
 import imagem2 from '../assets/imagem2.png'
 import imagem3 from '../assets/imagem3.png'
 import imagem4 from '../assets/imagem4.png'
+import { Link } from 'react-router-dom'
 
 function Faq() {
+  const PATH = '/mamis-app'
   return (
     <main className="container-fluid">
       <section className="row align-items-center">
@@ -128,9 +130,9 @@ function Faq() {
                   doadora deve ser saudável, não usar medicamentos que impeçam a
                   doação e se dispor a ordenhar e a doar o excedente a um banco
                   de leite humano.{' '}
-                  <a href="/mapa" target={'_blank'}>
+                  <Link to={PATH + '/mapa'} target={'_blank'}>
                     Consulte
-                  </a>{' '}
+                  </Link>{' '}
                   o hospital mais próximo de você
                 </div>
               </div>

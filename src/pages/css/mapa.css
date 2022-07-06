@@ -1,0 +1,62 @@
+.container-mapa {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#mapa {
+  width: 60vw;
+  height: 600px;
+}
+
+.Titulo {
+  font-size: 24px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .Titulo {
+    font-size: 18px;
+    text-align: center;
+  }
+  #mapa {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 625px) {
+  .container-mapa {
+    display: block;
+    margin: 0 auto;
+  }
+  .Titulo {
+    font-size: 14px;
+    text-align: center;
+  }
+  #mapa {
+    width: 400px;
+    height: 60vh;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 443px) {
+  .container-mapa {
+    display: block;
+    margin: 0 auto;
+  }
+  .Titulo {
+    font-size: 12px;
+    text-align: center;
+  }
+  #mapa {
+    width: 260px;
+    height: 80vh;
+    margin: 0 auto;
+  }
+}
+

@@ -42,13 +42,14 @@ function Navbar() {
 
         <div className="dropdown">
           <li className="btn-dropdown">
-            <Link id="2" className="link-menu" to={PATH + '/mamiss'}>
+            <Link id="2" className="link-menu" to={PATH + '/mamis'}>
               Mamis
             </Link>
           </li>
           <div className="dropdown_submenu">
             <Link to={PATH + '/missao'}>Missão</Link>
-            <Link to={PATH + '/maeparamae'}>Mãe para Mãe </Link>
+            <Link to={PATH + '/maeparamae'}>Mãe para Mãe</Link>
+            <Link to={PATH + '/mapa'}>Mapa</Link>
           </div>
         </div>
         <div className="dropdown">
@@ -82,7 +83,7 @@ function Navbar() {
           <div
             className="modal fade"
             id="LoginModal"
-            tabindex="-1"
+            tabIndex="-1"
             aria-labelledby="LoginModalLabel"
             aria-hidden="true"
           >

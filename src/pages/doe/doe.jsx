@@ -1,7 +1,9 @@
 import React from 'react'
 import '../css/doe.css'
+import { Link } from 'react-router-dom'
 
 function Doe() {
+  const PATH = '/mamis-app'
   return (
     <main className="container-fluid">
       <div className="row align-items-center">
@@ -43,8 +45,8 @@ function Doe() {
           <div className="col-12">
             <h1>
               Para prosseguir com a doação é preciso fazer{' '}
-              <a href="/login">Login</a> ou fazer{' '}
-              <a href="/Cadastro">Cadastro</a>
+              <Link to={PATH + '/login'}>Login</Link> ou fazer{' '}
+              <Link to={PATH + '/Cadastro'}>Cadastro</Link>
             </h1>
           </div>
           <div className="col-12">

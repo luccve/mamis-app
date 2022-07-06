@@ -31,7 +31,7 @@ function Footer() {
           </ul>
         </div>
         <div className="col">
-          <Link to={PATH + '/mamiss'} className="contato">
+          <Link to={PATH + '/mamis'} className="contato">
             Mamis
           </Link>
           <ul>
@@ -40,6 +40,9 @@ function Footer() {
             </li>
             <li>
               <Link to={PATH + '/maeparamae'}>Mãe para Mãe</Link>
+            </li>
+            <li>
+              <Link to={PATH + '/mapa'}>Mapa</Link>
             </li>
           </ul>
         </div>
@@ -53,6 +56,9 @@ function Footer() {
             </li>
             <li>
               <Link to={PATH + '/contato'}>Contato</Link>
+            </li>
+            <li>
+              <Link to={PATH + '/Login'}>Login</Link>
             </li>
           </ul>
         </div>
