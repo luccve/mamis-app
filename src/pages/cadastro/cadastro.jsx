@@ -72,7 +72,7 @@ function Cadastro() {
             {/* email */}
             <label htmlFor="email"></label>
             <input
-              onBlur={event => MaskEmail(event)}
+              onChange={event => MaskEmail(event)}
               id="email"
               type="email"
               name="email"
@@ -86,8 +86,7 @@ function Cadastro() {
             <label htmlFor="telefone"></label>
             <input
               id="telefone"
-              onKeyUp={event => MaskPhone(event)}
-              onBlur={event => MaskPhone(event)}
+              onChange={event => MaskPhone(event)}
               type="tel"
               name="telefone"
               placeholder="(xx) xxxxx-xxxx"
