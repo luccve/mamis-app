@@ -15,7 +15,7 @@ function home() {
           </h1>
 
           <Link to="doacao">
-            <i class="fas fa-heart"> Doe</i>
+            <i className="fas fa-heart"> Doe</i>
           </Link>
         </div>
         <div className="box-img">
@@ -30,7 +30,7 @@ function home() {
           <h1>Encontre rapidamente o Banco de leite mais proximo de você.</h1>
 
           <Link to="mapa">
-            <i class="fas fa-map"> Acesse o mapa.</i>
+            <i className="fas fa-map"> Acesse o mapa.</i>
           </Link>
         </div>
         <div className="box-img">
@@ -42,7 +42,7 @@ function home() {
           <h1>Saiba todo o processo e acompanhe todo o encaminhamento.</h1>
 
           <Link to="cadastro">
-            <i class="fas fa-check-double"> Faça seu cadastro.</i>
+            <i className="fas fa-check-double"> Faça seu cadastro.</i>
           </Link>
         </div>
         <div className="box-img">

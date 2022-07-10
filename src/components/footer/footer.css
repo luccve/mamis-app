@@ -9,6 +9,7 @@ footer {
 footer a {
   color: var(--texto-menu);
   text-decoration: none;
+  font-weight: 700;
   font-family: var(--font-f);
 }
 

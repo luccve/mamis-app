@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+
 import '../css/contato.css'
 import TextareaJS from '../../js/textarea/textarea'
 import Clear from '../../js/clear/clear'
@@ -38,7 +39,7 @@ function Contato() {
             {/* email */}
             <label htmlFor="email"></label>
             <input
-              onBlur={event => MaskEmail(event)}
+              onChange={event => MaskEmail(event)}
               id="email"
               type="email"
               name="email"

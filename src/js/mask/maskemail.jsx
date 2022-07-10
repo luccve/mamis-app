@@ -2,6 +2,11 @@ export default function MaskEmail() {
   var email = document.getElementById('email')
   var emailValidation = document.getElementById('emailValidation')
 
+  email.addEventListener('blur', function () {
+    var valor = email.value
+    var split = valor.split('@')
+    console.log(type(split[1]))
+  })
   validarEmail(email, emailValidation)
 }
 

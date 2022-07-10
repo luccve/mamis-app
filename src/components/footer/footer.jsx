@@ -64,13 +64,13 @@ function Footer() {
         </div>
 
         <div className="col icones">
-          <a href="https://www.instagram.com/mamisbrasil/">
+          <a href="https://www.instagram.com/mamisbrasil/" target="_blank">
             <i alt="instagram" className="fab fa-instagram"></i>
           </a>
-          <a href="https://github.com/luccve/mamis">
+          <a href="https://github.com/luccve/mamis-app" target="_blank">
             <i alt="github" className="fab fa-github"></i>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/estevao-lucas/" target="_blank">
             <i alt="linkedin" className="fab fa-linkedin"></i>
           </a>
         </div>
