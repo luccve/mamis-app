@@ -1,27 +1,36 @@
-img{
-    border-radius: 6px;
+img {
+  border-radius: 6px;
 }
 
-.main{
-    display: block !important;
-    
+.main {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
 }
 
-.main section{
-    margin-bottom: 30px;
+.banner-faq {
+  width: 100%;
 }
 
-main a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--color2ThemeDark);
+.maximo {
+  width: 80vw;
 }
 
-@media (max-width:850px) {
-    main{
-        max-height: 1400px !important;
-    }
-    .row{
-        display: block;
-    }
+.main section {
+  margin-bottom: 30px;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color2ThemeDark);
+}
+
+@media (max-width: 899px) {
+  main {
+    max-height: 14000px !important;
+  }
+  .row {
+    margin: 0 auto;
+  }
 }

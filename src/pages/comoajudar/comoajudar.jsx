@@ -8,10 +8,10 @@ function Comoajudar() {
   return (
     <main className="container-fluid main">
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <img className="img-fluid" src={ajuda2} alt="Formas de colaborar" />
         </div>
-        <div className="col-xs-5 col-md col-sm-12">
+        <div className="col">
           <h1 className="title">Como Apoiar?</h1>
           <p>
             O projeto e desenvolvido por um grupo de estudantes do IFPE junto
@@ -28,10 +28,10 @@ function Comoajudar() {
         </div>
       </section>
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <img className="img-fluid" src={ajuda} alt="Formas de colaborar" />
         </div>
-        <div className="col-xs-5 col-md col-sm-12">
+        <div className="col">
           <h1 className="title">Apoiar de toda a forma</h1>
           <p>
             Apesar de ser um projeto que estimula a doação de leite materno toda

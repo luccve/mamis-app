@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom'
 function Faq() {
   const PATH = '/mamis-app'
   return (
-    <main className="container-fluid">
+    <main className="container-fluid maximo">
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <div
             id="carouselExampleInterval"
             className="carousel slide"
@@ -65,7 +65,7 @@ function Faq() {
             </button>
           </div>
         </div>
-        <div className="col-xs-7 col-md-7 ">
+        <div className="col">
           <div className="accordion accordion-flush" id="accordionFlushExample">
             <h1 className="title">Principais Perguntas</h1>
             <div className="accordion-item">

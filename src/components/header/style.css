@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 * {
   padding: 0px;
@@ -17,9 +18,10 @@
   --texto-menu-light: #231942;
   --texto-menu: #ff006e;
   --fundo-branco: #fff;
-  --tema: #ECC816;
+  --tema: #ecc816;
+  --fonte-f: 'Josefin Sans', sans-serif;
   --boxshadow: 0px 8px 16px 0px rgba((0, 0, 0), 0.3);
-  
+  --Titulos: #2a217a;
 }
 
 .border a:hover:not(.ultimo-a) {
@@ -40,37 +42,28 @@
   justify-content: center;
   align-items: center;
   background: var(--fundo);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
 }
 
 #header a {
   color: var(--texto-menu);
   text-decoration: none;
-  font-family: sans-serif;
-
+  font-family: var(--fonte-f);
 }
-
-
-
-
-
 
 /* MEU HAMBURGER */
 
 #menu {
-
   list-style: none;
   gap: 0.5rem;
 }
 
 #menu a {
   display: block;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   padding: 0.5rem;
-  
-
 }
 
 #menu ul li a:nth-child(6) {
@@ -88,12 +81,10 @@
 
 #conteudo {
   min-height: 600px;
-
 }
 
 #conteudo p {
   display: none;
-
 }
 
 /* DROPDOWN MENU */
@@ -106,25 +97,22 @@
   font-weight: 600px;
 }
 
-#theme:hover{
+#theme:hover {
   border-bottom: 2px solid var(--fundo-branco);
   border-radius: 6px;
   padding-bottom: 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .link-menu {
   text-decoration: none;
-
 }
 
 .btn-dropdown {
-
   color: white;
   font-size: 16px;
   border: none;
   cursor: pointer;
-
 }
 
 /* .show {
@@ -132,20 +120,17 @@
   border-radius: 6px;
 } */
 
-
 .dropdown {
   position: relative;
   display: inline-block;
-
 }
 
 .dropdown:hover:not(:last-child) {
   border-bottom: 2px solid var(--fundo-branco);
   border-radius: 6px;
-  
+
   box-shadow: var(--boxshadow);
 }
-
 
 .dropdown_submenu {
   display: none;
@@ -159,10 +144,8 @@
 }
 
 .dropdown_submenu a {
-  
   text-decoration: none;
   display: block;
-
 }
 
 .dropdown_submenu a:hover {
@@ -170,7 +153,6 @@
   box-shadow: var(--boxshadow);
   border-radius: 6px;
   border-bottom: 2px solid #182325 !important;
-
 }
 
 .dropdown:hover .dropdown_submenu {
@@ -179,25 +161,21 @@
 
 /* RESPONSIVE */
 
-
-@media (max-width:200px) {
+@media (max-width: 200px) {
   #header {
     flex-direction: column;
   }
 }
 
-
-@media (max-width:650px) {
+@media (max-width: 650px) {
   footer {
     flex-direction: column;
   }
 
   .contato {
-
     display: block;
   }
 }
-
 
 @media (max-width: 600px) {
   #theme {
@@ -206,9 +184,7 @@
     font-weight: 600px;
   }
 
-
   #menu {
-
     display: block;
     position: absolute;
     width: 50%;
@@ -220,7 +196,6 @@
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
-
   }
 
   #nav.active #menu {
@@ -233,11 +208,10 @@
     padding: 1rem 0;
     font-size: 20px;
     margin: 0 1rem;
-
   }
 
   #btn-mobile {
-    display: flex;
+    display: block;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     border: none;
@@ -277,15 +251,11 @@
   }
 
   .dropdown_submenu {
-
     visibility: hidden;
     overflow-y: hidden;
   }
-
 }
-
 
 ::-webkit-scrollbar {
   width: 0px;
-
 }

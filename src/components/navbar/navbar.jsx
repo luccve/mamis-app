@@ -69,16 +69,19 @@ function Navbar() {
         </div>
 
         <div className="dropdown" id="login">
-          {/* modal do boostrap */}
+          {/* modal do boostrap
           {/* <!-- Button trigger modal --> */}
-          <a
+          {/* <a
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#LoginModal"
             onClick={e => Login(e)}
-          >
+          ></a>  */}
+
+          <Link id="4" className="link-menu" to={PATH + '/login'}>
             Login
-          </a>
+          </Link>
+
           {/* <!-- Modal --> */}
           <div
             className="modal fade"

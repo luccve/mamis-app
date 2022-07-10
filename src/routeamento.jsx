@@ -13,13 +13,14 @@ import Doacao from './pages/doe/doe'
 import Cadastro from './pages/cadastro/cadastro'
 import ComponentLogin from './pages/componentLogin/componentLogin'
 import Mapa from './pages/mapa'
+import Home from './pages/home'
 
 function Routeamento() {
   const PATH = 'mamis-app'
 
   return (
     <Routes>
-      <Route path={PATH + '/'} element={<Faq />}></Route>
+      <Route path={PATH + '/'} element={<Home />}></Route>
       <Route path={PATH + '/FAQ'} element={<Faq />}></Route>
       <Route path={PATH + '/historia'} element={<Historia />}></Route>
       <Route path={PATH + '/maeparamae'} element={<Mae />}></Route>

@@ -1,67 +1,56 @@
 footer {
-
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background-color: var(--fundo);
-
-
-
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--fundo);
 }
 
 footer a {
-    color: var(--texto-menu);
-    text-decoration: none;
-    font-family: var(--FontText);
+  color: var(--texto-menu);
+  text-decoration: none;
+  font-family: var(--font-f);
 }
 
 #logoFooter {
-
-    width: 160px;
-    height: 160px;
+  width: 160px;
+  height: 160px;
 }
 
 #logoFooter:hover {
-    cursor: pointer;
-    
-    
+  cursor: pointer;
 }
-
 
 .contato {
-    cursor: pointer;
-    font-size: 20px;
-   
+  cursor: pointer;
+  font-size: 20px;
 }
 
-footer li{
-    text-decoration: none;
-    list-style: none;
-    color: var(--texto-menu);
+footer li {
+  text-decoration: none;
+  list-style: none;
+  color: var(--texto-menu);
 }
-
-
-
 
 .icones {
-    flex-direction: row;
-    text-align: center;
-    font-size: large;
+  flex-direction: row;
+  text-align: center;
+  font-size: large;
 }
 
 .icones a:not(:last-child) {
-
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
-@media (max-width:900px) {
-    footer {
-        text-align: center;
-    }
-    footer li{
-        text-align: justify;
-    }
-  
+@media (max-width: 900px) {
+  footer {
+    text-align: center;
+  }
+  footer li {
+    text-align: justify;
+  }
 
+  .row {
+    display: block;
+  }
 }

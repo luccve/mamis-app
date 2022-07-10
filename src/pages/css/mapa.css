@@ -13,12 +13,18 @@
 }
 
 .Titulo {
-  font-size: 24px;
   display: block;
 }
 
+.Titulo h2 {
+  font-size: var(--fontTamTitle);
+  font-family: var(--font-f);
+  color: var(--Titulos);
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
-  .Titulo {
+  .Titulo h2 {
     font-size: 18px;
     text-align: center;
   }
@@ -33,7 +39,7 @@
     display: block;
     margin: 0 auto;
   }
-  .Titulo {
+  .Titulo h2 {
     font-size: 14px;
     text-align: center;
   }
@@ -49,7 +55,7 @@
     display: block;
     margin: 0 auto;
   }
-  .Titulo {
+  .Titulo h2 {
     font-size: 12px;
     text-align: center;
   }

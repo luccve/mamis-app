@@ -1,14 +1,14 @@
 import React from 'react'
-import '../css/styles.css'
+// import '../css/styles.css'
 import '../css/missao.css'
 import MissaoPNG from '../assets/quemsomos.png'
 import MissaoPNG2 from '../assets/imagem4.png'
 
 function Missao() {
   return (
-    <main className="container-fluid  cardCentral">
-      <section className="row align-items-center">
-        <div className="col-lg-5 col-md-5 card">
+    <main className="container-fluid conteudo">
+      <section className="row align-items-center ">
+        <div className="col card">
           <img
             src={MissaoPNG}
             className="card-img-top img-fluid"
@@ -31,8 +31,8 @@ function Missao() {
             </p>
           </div>
         </div>
-        <div className="col-md-1"></div>
-        <div className="col-lg-5 col-md-5 card">
+
+        <div className="col card">
           <img
             src={MissaoPNG2}
             className="card-img-top img-fluid"
@@ -57,13 +57,13 @@ function Missao() {
         </div>
       </section>
 
-      <section>
+      <section className="row align-items-center">
         <div
           className="modal fade"
           id="staticBackdrop"
           data-bs-backdrop="static"
           data-bs-keyboard="false"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
@@ -106,7 +106,7 @@ function Missao() {
           id="staticBackdrop2"
           data-bs-backdrop="static"
           data-bs-keyboard="false"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="staticBackdropLabel2"
           aria-hidden="true"
         >

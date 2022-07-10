@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 function Doe() {
   const PATH = '/mamis-app'
   return (
-    <main className="container-fluid">
+    <main className="container-fluid ajuste">
       <div className="row align-items-center">
-        <div className="col-12">
+        <div className="col">
           <h2>
             A mãe lactante além de estar saudável deve ter em mãos a
             documentação listada abaixo para a realização do cadastro.{' '}
@@ -42,14 +42,14 @@ function Doe() {
               <td scope="row">A senhora fez pré-natal?</td>
             </tbody>
           </table>
-          <div className="col-12">
+          <div className="col">
             <h1>
               Para prosseguir com a doação é preciso fazer{' '}
               <Link to={PATH + '/login'}>Login</Link> ou fazer{' '}
               <Link to={PATH + '/Cadastro'}>Cadastro</Link>
             </h1>
           </div>
-          <div className="col-12">
+          <div className="col">
             <h1>
               Para mais informações sobre todo o processo{' '}
               <a

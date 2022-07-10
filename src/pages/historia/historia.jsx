@@ -6,14 +6,14 @@ function Historia() {
   return (
     <main className="container-fluid">
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <img
             id="mae"
             src={mae}
             alt="Imagem ilustrativa de mãe com crianças de colo."
           />
         </div>
-        <div className="col-xs-5 col-md col-sm-12">
+        <div className="col">
           <h1 className="title">História</h1>
           <p>
             Nosso projeto começou com 5 alunos de desenvolvimento de sistemas, a

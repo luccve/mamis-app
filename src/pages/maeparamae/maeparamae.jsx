@@ -6,14 +6,14 @@ function Maeparamae() {
   return (
     <main className="container-fluid">
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <img
             id="maeparamae"
             src={mae2}
             alt="Imagem ilustrativa de mãe com crianças de colo,"
           />
         </div>
-        <div className="col-xs-5 col-md col-sm-12">
+        <div className="col">
           <h1 className="title">Mãe para Mãe</h1>
           <p>
             Criamos a ferramenta <b>MÃE PARA MÃE</b>, que busca conscientizar

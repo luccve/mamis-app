@@ -6,9 +6,9 @@ import YouTube from 'react-youtube'
 
 function Quemsomos() {
   return (
-    <main className="container-fluid quemsomos">
+    <main className="container-fluid quemsomos align-items-center">
       <section className="row align-items-center">
-        <div className="col-xs-5 col-md-5 col-sm-12">
+        <div className="col">
           <div className="card">
             <img
               src={Quemsomos1}
@@ -26,7 +26,7 @@ function Quemsomos() {
             </div>
           </div>
         </div>
-        <div className="col-xs-5 col-md-7 col-sm-12">
+        <div className="col">
           <h1 className="title">Quem somos</h1>
           <p>
             Criamos a <b>STARTUP MAMIS</b>, um grupo de alunos de
